@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@keyframes movedown {
+    0% {
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+
+    100% {
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+@keyframes moveright {
+    0% {
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+
+    100% {
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+.container {
+    height: 50pc;
+    width: 100%;
+    background-image: url(background.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+    padding-top: 100px;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #fafafa;
+}
+
+.card {
+    color: white;
+    float: left;
+    width: calc(25% - 20px);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    height: 200px;
+    animation: moveright 1s linear 1;
+    animation-delay: 1.5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.card p {
+    font-size: 18px;
+}
+
+.cardContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.intro h1 {
+    font-size: 60px;
+    ;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+}
+
+.intro p {
+    font-size: 20px;
+    ;
+    color: #6a7199;
+}
+
+.intro {
+    margin-left: 10px;
+    margin-top: 10px;
+    animation: movedown 1s linear 1;
+    animation-delay: 0.5s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+.intro .btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #87adfe, #ff77cd);
+    border-radius: 6px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(94, 26, 0.15);
+
+}
+
+.card h2 a {
+    text-decoration: none;
+}
+
+#c1 {
+    background-color: rgb(153, 29, 224);
+}
+
+#c2 {
+    background-color: rgb(12, 126, 120);
+
+}
+
+#c3 {
+    background-color: rgb(207, 41, 91);
+}
+
+#c4 {
+    background-color: rgb(204, 91, 39);
+}
+
+.card h2 a {
+    color: white;
+}
+
+.card h2 a:hover {
+    color: #e8fe87;
+}
+
+a:visited {
+    color: white
+}

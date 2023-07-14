@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Log in</title>
+    <link rel="stylesheet" href="log.css">
+    <meta name="Login" content="Log in" />
+
+</head>
+
+<body>
+    <div class="center">
+        <h1>Login</h1>
+        <form name="myform" method="post">
+            <div class="txt_field">
+                <input type="text" name="uname" id="username" required>
+                <span></span>
+                <label>Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" name="p" id="password" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div class="pass">Forgot Password?</div>
+            <input type="submit" value="Login" id="redirect" onclick="val()">
+
+            <div class="signup_link">
+                Not a member? <a href="#">Signup</a>
+            </div>
+        </form>
+    </div>
+    <script>
+        function val() {
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if (username == "admin" && password == "admin") {
+
+
+                window.location.assign("Home.html");
+
+                alert("Login Succefuly");
+            }
+
+            else {
+                alert("login failed");
+                return;
+            }
+        }
+    </script>
+</body>
+
+
+
+</html>
